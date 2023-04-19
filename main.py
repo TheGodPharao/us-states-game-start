@@ -1,4 +1,5 @@
 import turtle
+import pandas
 
 screen = turtle.Screen()
 screen.title("U.S. States Game")
@@ -16,3 +17,6 @@ turtle.shape(image)
 # TODO: make sure the title is Dynamic counting correct states entries in the form of 0/50
 answer_state = screen.textinput(title="Guess The State", prompt="Type the correct State's name and "
                                                                 "it'll appear on the screen")
+
+data = pandas.read_csv("50_states.csv")
+print(data)
