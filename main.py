@@ -1,0 +1,17 @@
+import turtle
+
+screen = turtle.Screen()
+screen.title("U.S. States Game")
+image = "blank_states_img.gif"
+screen.addshape(image)
+turtle.shape(image)
+
+# how to get coordinates of mouse click on a gif
+# def get_mouse_click_coordinates(x, y):
+#     print(x, y)
+# turtle.onscreenclick(get_mouse_click_coordinates)
+# turtle.mainloop()
+# in this example, we don't need this code as the coordinates are already in the csv file
+
+answer_state = screen.textinput(title="Guess The State", prompt="Type the correct State's name and "
+                                                                "it'll appear on the screen")
